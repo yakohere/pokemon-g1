@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    button {
+        padding: 16px 32px;
+        background-color: cadetblue;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .modal {
+        width: 400px;
+        background-color: rgb(199, 217, 248);
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .close {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(150%);
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        backdrop-filter: blur(5px);
+        left: 0;
+        top: 0;
+
+        transition: 0.5s;
+    }
+
+    .overlay-close {
+        background-color: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(0);
+        z-index: -900;
+    }
+</style>
+<body>
+    <div class="overlay">
+        <div class="modal close">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit eligendi quae cupiditate minima. Numquam commodi hic quod? Unde inventore facilis aspernatur tempora alias deserunt sint reiciendis debitis nobis ducimus?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit eligendi quae cupiditate minima. Numquam commodi hic quod? Unde inventore facilis aspernatur tempora alias deserunt sint reiciendis debitis nobis ducimus?
+            </p>
+            <button id="close-btn">Yopish</button>
+        </div>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a repellendus asperiores at quae quasi iste esse ea illo voluptas. Porro obcaecati deserunt, quidem delectus reiciendis minima omnis fugit optio!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a repellendus asperiores at quae quasi iste esse ea illo voluptas. Porro obcaecati deserunt, quidem delectus reiciendis minima omnis fugit optio!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a repellendus asperiores at quae quasi iste esse ea illo voluptas. Porro obcaecati deserunt, quidem delectus reiciendis minima omnis fugit optio!
+    </p>
+    <button id="open-btn">Modlani ko'rsat</button>
+</body>
+<script src="script.js"></script>
+</html>

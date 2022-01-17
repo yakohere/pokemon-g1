@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table, tr, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        padding: 16px 32px;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .form {
+        width: 250px;
+    }
+
+    .form input[type=text] {
+        display: block;
+        border: 1px solid black;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .form label {
+        margin-right: 26px;
+    }
+
+    .form * {
+        margin: 16px 0;
+    }
+
+    #submit {
+        display: block;
+        width: 100%;
+        background-color: #17A3A3;
+        color: white;
+        border: none;
+        padding: 16px;
+        font-size: 19px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="form">
+            <input placeholder="Ism" type="text" id="firstname">
+            <input placeholder="Familya" type="text" id="surname">
+            <input placeholder="Manzil" type="text" id="address">
+            
+            <input id="male-radio" type="radio" name="gender" value="Erkak">
+            <label for="male-radio">Erkak</label>
+            <input id="female-radio" type="radio" name="gender" value="Ayol">
+            <label for="female-radio">Ayol</label>
+
+            <button id="submit">Saqlash</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ismi</th>
+                    <th>Familya</th>
+                    <th>Manzil</th>
+                    <th>Jinsi</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
